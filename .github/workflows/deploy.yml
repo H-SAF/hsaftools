@@ -24,7 +24,7 @@ jobs:
         pip install jupyter-book
 
     - name: Build Jupyter Book
-      run: jupyter-book build .
+      run: jupyter-book build nbtest.ipynb
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
