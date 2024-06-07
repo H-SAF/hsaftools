@@ -45,8 +45,7 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build .
-        jupyter-book toc from-project .
+        jupyter-book build nbtest.ipynb
 
     # Upload the book's HTML as an artifact
     - name: Upload artifact
